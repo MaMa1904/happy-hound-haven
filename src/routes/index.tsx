@@ -85,15 +85,9 @@ function Index() {
               soft sunlight, and a thousand wagging tails. 🐾
             </p>
             <div className="mt-8 flex gap-4 justify-center md:justify-start">
-              <button
-                onClick={() => setConfettiBurst((n) => n + 1)}
-                className="px-8 py-4 rounded-full bg-primary text-primary-foreground font-display text-lg shadow-soft hover:scale-105 transition-transform"
-              >
-                🎉 Throw confetti
-              </button>
               <a
                 href="#gift"
-                className="px-8 py-4 rounded-full bg-card border-2 border-primary text-primary font-display text-lg shadow-paper hover:scale-105 transition-transform"
+                className="px-8 py-4 rounded-full bg-primary text-primary-foreground font-display text-lg shadow-soft hover:scale-105 transition-transform"
               >
                 🎁 My gift
               </a>
