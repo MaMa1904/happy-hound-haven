@@ -152,6 +152,44 @@ function Index() {
         </div>
       </section>
 
+      {/* PERSONAL NOTE */}
+      <section className="relative py-24 px-6">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="font-display font-black text-4xl md:text-6xl">
+              A Note <span className="text-primary italic">From Me</span> 💖
+            </h2>
+          </div>
+          <div
+            className="relative rounded-3xl p-8 md:p-14 shadow-soft overflow-hidden"
+            style={{ background: "linear-gradient(135deg, color-mix(in oklab, var(--blush) 35%, var(--card)), color-mix(in oklab, var(--sky) 30%, var(--card)))" }}
+          >
+            {/* decorative paws */}
+            <img src={paw} alt="" aria-hidden className="absolute top-4 left-4 w-16 opacity-30 -rotate-12" />
+            <img src={paw} alt="" aria-hidden className="absolute top-20 left-20 w-12 opacity-20 rotate-12" />
+            <img src={paw} alt="" aria-hidden className="absolute bottom-6 right-6 w-14 opacity-25 rotate-45" />
+
+            <div className="relative space-y-5 text-foreground text-base md:text-lg leading-relaxed font-body">
+              <p className="font-script text-2xl md:text-3xl">Dear Mansi,</p>
+              <p>
+                On this special day, I want you to know how incredibly lucky I am to have you in my life.
+                You're not just a dog lover — you're one of the most caring, kind, and fun people I know.
+                Whether you're sneaking Kuku extra treats or making everyone around you smile, you do it
+                all with so much love. 🐾
+              </p>
+              <p>
+                Here's to celebrating <span className="font-display font-black">YOU</span> today, because
+                you deserve all the happiness, all the cake, and all the doggy snuggles in the world.
+                Never change, you wonderful human! 🎂✨
+              </p>
+              <p className="font-display font-black text-lg md:text-xl pt-2">
+                With so much love 💖
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* GALLERY */}
       <section className="relative py-24 px-6">
         <div className="max-w-6xl mx-auto">
