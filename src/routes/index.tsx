@@ -199,16 +199,8 @@ function Index() {
                 className={`relative mb-12 md:w-1/2 ${i % 2 === 0 ? "md:pr-12" : "md:ml-auto md:pl-12"} pl-12 md:pl-0`}
               >
                 <div
-                  className="absolute left-4 md:left-auto top-6 w-6 h-6 rounded-full -translate-x-1/2 border-4 border-cream shadow-paper"
-                  style={{
-                    background: m.color,
-                    [i % 2 === 0 ? "right" : "left"]: "auto",
-                    ...(window.innerWidth >= 768
-                      ? i % 2 === 0
-                        ? { right: "-12px", left: "auto" }
-                        : { left: "-12px" }
-                      : {}),
-                  }}
+                  className="absolute left-4 md:left-1/2 top-6 w-6 h-6 rounded-full -translate-x-1/2 border-4 shadow-paper"
+                  style={{ background: m.color, borderColor: "var(--cream)" }}
                 />
                 <div
                   className="bg-card rounded-2xl p-6 shadow-paper hover:shadow-soft transition-shadow"
