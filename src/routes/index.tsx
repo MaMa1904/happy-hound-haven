@@ -13,10 +13,10 @@ import paw from "@/assets/paw.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Happy Birthday Mansi 🎀 — From your friend & Kuku" },
-      { name: "description", content: "A pastel birthday surprise for Mansi & her beagle Kuku 🐾" },
+      { title: "Happy Birthday Mansi 🎀 — with love from your friend (and Kuku)" },
+      { name: "description", content: "A pastel birthday surprise for Mansi, the best dog-mom to her beagle Kuku 🐾" },
       { property: "og:title", content: "Happy Birthday Mansi 🎀" },
-      { property: "og:description", content: "A pastel birthday surprise for Mansi & Kuku 🐾" },
+      { property: "og:description", content: "A pastel birthday surprise for Mansi 🐾" },
     ],
   }),
   component: Index,
@@ -66,9 +66,9 @@ function Index() {
           <div className="text-center md:text-left animate-fade-up">
             <p className="font-script text-3xl md:text-4xl text-primary mb-3">happy birthday,</p>
             <h1 className="font-display font-black text-6xl md:text-8xl leading-[0.9] text-foreground">
-              Mansi<br />
+              Mansi
               <span
-                className="italic"
+                className="block italic"
                 style={{
                   background: "var(--gradient-sunset)",
                   WebkitBackgroundClip: "text",
@@ -76,9 +76,10 @@ function Index() {
                   backgroundClip: "text",
                 }}
               >
-                &amp; Kuku 🐾
+                it's your day 🎀
               </span>
             </h1>
+            <p className="mt-4 font-script text-2xl text-muted-foreground">(and Kuku insisted on helping 🐾)</p>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-md mx-auto md:mx-0">
               A pastel little corner of the internet, made just for you — full of love,
               soft sunlight, and a thousand wagging tails. 🐾
@@ -147,6 +148,44 @@ function Index() {
               and as endless as the love your <span style={{ color: "var(--sky-deep)" }}>beagle</span> has for you."
             </p>
             <p className="mt-8 text-center font-display italic text-muted-foreground">— with all my love 🎀</p>
+          </div>
+        </div>
+      </section>
+
+      {/* PERSONAL NOTE */}
+      <section className="relative py-24 px-6">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="font-display font-black text-4xl md:text-6xl">
+              A Note <span className="text-primary italic">From Me</span> 💖
+            </h2>
+          </div>
+          <div
+            className="relative rounded-3xl p-8 md:p-14 shadow-soft overflow-hidden"
+            style={{ background: "linear-gradient(135deg, color-mix(in oklab, var(--blush) 35%, var(--card)), color-mix(in oklab, var(--sky) 30%, var(--card)))" }}
+          >
+            {/* decorative paws */}
+            <img src={paw} alt="" aria-hidden className="absolute top-4 left-4 w-16 opacity-30 -rotate-12" />
+            <img src={paw} alt="" aria-hidden className="absolute top-20 left-20 w-12 opacity-20 rotate-12" />
+            <img src={paw} alt="" aria-hidden className="absolute bottom-6 right-6 w-14 opacity-25 rotate-45" />
+
+            <div className="relative space-y-5 text-foreground text-base md:text-lg leading-relaxed font-body">
+              <p className="font-script text-2xl md:text-3xl">Dear Mansi,</p>
+              <p>
+                On this special day, I want you to know how incredibly lucky I am to have you in my life.
+                You're not just a dog lover — you're one of the most caring, kind, and fun people I know.
+                Whether you're sneaking Kuku extra treats or making everyone around you smile, you do it
+                all with so much love. 🐾
+              </p>
+              <p>
+                Here's to celebrating <span className="font-display font-black">YOU</span> today, because
+                you deserve all the happiness, all the cake, and all the doggy snuggles in the world.
+                Never change, you wonderful human! 🎂✨
+              </p>
+              <p className="font-display font-black text-lg md:text-xl pt-2">
+                With so much love 💖
+              </p>
+            </div>
           </div>
         </div>
       </section>
