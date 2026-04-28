@@ -66,9 +66,9 @@ function Index() {
           <div className="text-center md:text-left animate-fade-up">
             <p className="font-script text-3xl md:text-4xl text-primary mb-3">happy birthday,</p>
             <h1 className="font-display font-black text-6xl md:text-8xl leading-[0.9] text-foreground">
-              Mansi<br />
+              Mansi
               <span
-                className="italic"
+                className="block italic"
                 style={{
                   background: "var(--gradient-sunset)",
                   WebkitBackgroundClip: "text",
@@ -76,9 +76,10 @@ function Index() {
                   backgroundClip: "text",
                 }}
               >
-                &amp; Kuku 🐾
+                it's your day 🎀
               </span>
             </h1>
+            <p className="mt-4 font-script text-2xl text-muted-foreground">(and Kuku insisted on helping 🐾)</p>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-md mx-auto md:mx-0">
               A pastel little corner of the internet, made just for you — full of love,
               soft sunlight, and a thousand wagging tails. 🐾
