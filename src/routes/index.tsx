@@ -66,7 +66,7 @@ function Index() {
           <div className="text-center md:text-left animate-fade-up">
             <p className="font-script text-3xl md:text-4xl text-primary mb-3">happy birthday,</p>
             <h1 className="font-display font-black text-6xl md:text-8xl leading-[0.9] text-foreground">
-              you &amp; your<br />
+              Mansi<br />
               <span
                 className="italic"
                 style={{
@@ -76,7 +76,7 @@ function Index() {
                   backgroundClip: "text",
                 }}
               >
-                little beagle
+                &amp; Kuku 🐾
               </span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-md mx-auto md:mx-0">
@@ -105,11 +105,11 @@ function Index() {
               style={{ background: "var(--gradient-sunset)" }}
             />
             <img
-              src={beagleHero}
-              alt="A cute beagle with a pink bow surrounded by pastel flowers"
+              src={kuku2}
+              alt="Kuku the beagle, close up"
               width={1280}
               height={1280}
-              className="relative w-full max-w-md mx-auto animate-float drop-shadow-2xl"
+              className="relative w-full max-w-md mx-auto rounded-[2rem] object-cover aspect-square animate-float drop-shadow-2xl border-8 border-card"
             />
             <div
               className="absolute -top-4 -right-4 bg-butter px-5 py-3 rounded-full shadow-paper font-script text-2xl rotate-12"
