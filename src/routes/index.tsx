@@ -13,10 +13,10 @@ import paw from "@/assets/paw.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Happy Birthday Mansi 🎀 — From your friend & Kuku" },
-      { name: "description", content: "A pastel birthday surprise for Mansi & her beagle Kuku 🐾" },
+      { title: "Happy Birthday Mansi 🎀 — with love from your friend (and Kuku)" },
+      { name: "description", content: "A pastel birthday surprise for Mansi, the best dog-mom to her beagle Kuku 🐾" },
       { property: "og:title", content: "Happy Birthday Mansi 🎀" },
-      { property: "og:description", content: "A pastel birthday surprise for Mansi & Kuku 🐾" },
+      { property: "og:description", content: "A pastel birthday surprise for Mansi 🐾" },
     ],
   }),
   component: Index,
