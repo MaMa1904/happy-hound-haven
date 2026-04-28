@@ -23,8 +23,8 @@ export const Route = createFileRoute("/")({
 });
 
 const memories = [
-  { year: "The day we met", text: "Two strangers who somehow knew they'd be forever friends.", color: "var(--blush)" },
-  { year: "Kuku arrives", text: "A tiny howl, four floppy ears, and your heart was gone. 🐶", color: "var(--butter)" },
+  { year: "Kuku arrives", text: "A tiny howl, four floppy ears, and your heart was gone. 🐶", color: "var(--blush)" },
+  { year: "The day we met", text: "Two strangers who somehow knew they'd be forever friends.", color: "var(--butter)" },
   { year: "Countless memories", text: "Late night chats, chai breaks, and the loudest laughter.", color: "var(--sky)" },
   { year: "Today", text: "Another year of you being the warmest soul we know. 🎀", color: "var(--mint)" },
 ];
@@ -79,7 +79,7 @@ function Index() {
                 it's your day 🎀
               </span>
             </h1>
-            <p className="mt-4 font-script text-2xl text-muted-foreground">(and Kuku insisted on helping 🐾)</p>
+            
             <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-md mx-auto md:mx-0">
               A pastel little corner of the internet, made just for you — full of love,
               soft sunlight, and a thousand wagging tails. 🐾
