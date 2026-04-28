@@ -3,19 +3,20 @@ import { useState } from "react";
 import { Curtains } from "@/components/Curtains";
 import { Confetti } from "@/components/Confetti";
 import { PawCursor } from "@/components/PawCursor";
-import beagleHero from "@/assets/beagle-hero.jpg";
-import beagleParty from "@/assets/beagle-party.jpg";
-import beagleSleep from "@/assets/beagle-sleep.jpg";
-import beagleRun from "@/assets/beagle-run.jpg";
+import kuku1 from "@/assets/kuku-1.jpeg";
+import kuku2 from "@/assets/kuku-2.jpeg";
+import mansi from "@/assets/mansi.jpeg";
+import meAndMansi from "@/assets/me-and-mansi.jpeg";
+import mansi2 from "@/assets/mansi-2.png";
 import paw from "@/assets/paw.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Happy Birthday 🎀 — A pastel love letter for a beagle mom" },
-      { name: "description", content: "A whimsical pastel birthday site for the sweetest beagle mom 🐾" },
-      { property: "og:title", content: "Happy Birthday 🎀" },
-      { property: "og:description", content: "A whimsical pastel birthday surprise 🐾" },
+      { title: "Happy Birthday Mansi 🎀 — From your friend & Kuku" },
+      { name: "description", content: "A pastel birthday surprise for Mansi & her beagle Kuku 🐾" },
+      { property: "og:title", content: "Happy Birthday Mansi 🎀" },
+      { property: "og:description", content: "A pastel birthday surprise for Mansi & Kuku 🐾" },
     ],
   }),
   component: Index,
@@ -23,16 +24,18 @@ export const Route = createFileRoute("/")({
 
 const memories = [
   { year: "The day we met", text: "Two strangers who somehow knew they'd be forever friends.", color: "var(--blush)" },
-  { year: "The beagle arrives", text: "A tiny howl, four floppy ears, and your heart was gone.", color: "var(--butter)" },
-  { year: "Countless walks", text: "Pastel sunsets, muddy paws, and the loudest laughter.", color: "var(--sky)" },
+  { year: "Kuku arrives", text: "A tiny howl, four floppy ears, and your heart was gone. 🐶", color: "var(--butter)" },
+  { year: "Countless memories", text: "Late night chats, chai breaks, and the loudest laughter.", color: "var(--sky)" },
   { year: "Today", text: "Another year of you being the warmest soul we know. 🎀", color: "var(--mint)" },
 ];
 
 const galleryItems = [
-  { src: beagleHero, caption: "the birthday girl 🎀", rotate: -3 },
-  { src: beagleParty, caption: "party hat era", rotate: 2 },
-  { src: beagleSleep, caption: "nap goals", rotate: -2 },
-  { src: beagleRun, caption: "zoomies forever", rotate: 3 },
+  { src: mansi, caption: "the birthday girl 🎀", rotate: -3 },
+  { src: kuku2, caption: "kuku close-up 🐶", rotate: 2 },
+  { src: kuku1, caption: "kuku's nap goals", rotate: -2 },
+  { src: meAndMansi, caption: "us, always 💛", rotate: 3 },
+  { src: mansi2, caption: "queen energy ✨", rotate: -4 },
+  { src: kuku1, caption: "sunlit kuku ☀️", rotate: 4 },
 ];
 
 function Index() {
@@ -63,7 +66,7 @@ function Index() {
           <div className="text-center md:text-left animate-fade-up">
             <p className="font-script text-3xl md:text-4xl text-primary mb-3">happy birthday,</p>
             <h1 className="font-display font-black text-6xl md:text-8xl leading-[0.9] text-foreground">
-              you &amp; your<br />
+              Mansi<br />
               <span
                 className="italic"
                 style={{
@@ -73,7 +76,7 @@ function Index() {
                   backgroundClip: "text",
                 }}
               >
-                little beagle
+                &amp; Kuku 🐾
               </span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-md mx-auto md:mx-0">
@@ -102,11 +105,11 @@ function Index() {
               style={{ background: "var(--gradient-sunset)" }}
             />
             <img
-              src={beagleHero}
-              alt="A cute beagle with a pink bow surrounded by pastel flowers"
+              src={kuku2}
+              alt="Kuku the beagle, close up"
               width={1280}
               height={1280}
-              className="relative w-full max-w-md mx-auto animate-float drop-shadow-2xl"
+              className="relative w-full max-w-md mx-auto rounded-[2rem] object-cover aspect-square animate-float drop-shadow-2xl border-8 border-card"
             />
             <div
               className="absolute -top-4 -right-4 bg-butter px-5 py-3 rounded-full shadow-paper font-script text-2xl rotate-12"
